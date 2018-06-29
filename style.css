@@ -48,16 +48,6 @@ html, body {
     padding-bottom: 1rem;
 }
 
-.btn-primary {
-    background-color: #6648b1;
-    border: 1px solid #563d7c;
-}
-
-.btn-primary:hover {
-    background-color: #563d7c;
-    border: 1px solid #563d7c;
-}
-
 
 
 /* Build with Ease section 1:04:12 */
@@ -83,29 +73,36 @@ html, body {
     margin-bottom: 1rem;
 }
 
-
-.fa-home {
-    color: #45966a; 
+ul.info-list li{
+    list-style: square;
 }
 
-.fa-address-card {
-    color: #945151;
+ul.sub-list li {
+    list-style: none;
 }
 
-.fa-database {
+
+/*HTML symbol*/
+.fa-code {
+    color: #e54d26; 
+}
+
+/*Bootstrap symbol*/
+.fa-bold {
+    color: #563d7c;
+}
+
+/*CSS symbol*/
+.fa-css3 {
     color: #2163af;
 }
 
-.fa-home, .fa-address-card, .fa-database {
+.fa-code, .fa-bold, .fa-css3 {
     font-size: 4em;
     margin: 1rem;
 }
 
 
-
-
-
-/* click for fun section */
 .fun {
     width: 100%;
     margin-bottom: 2rem;
@@ -114,6 +111,10 @@ html, body {
 .gif {
     width: 100%;
     /* make image fit the div 100% no out spillage */
+}
+
+.card-img-top:hover {
+    opacity: .7;
 }
 
 
