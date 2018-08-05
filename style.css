@@ -53,9 +53,6 @@ html, body {
     padding-bottom: 1rem;
 }
 
-
-
-/* Build with Ease section 1:04:12 */
 .jumbotron {
     padding: 1rem;
     border-radius: 0;
@@ -84,6 +81,15 @@ ul.info-list li{
 
 ul.sub-list li {
     list-style: none;
+}
+
+.card {
+    height: 100%;
+}
+
+.card a img {
+    width: 100%;
+    height: 388px;
 }
 
 
