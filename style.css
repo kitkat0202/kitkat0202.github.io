@@ -7,68 +7,90 @@ html, body {
     color: #222;
 }
 
-#demo {
-    width: 80%;
-    margin: 10px auto;
+.padding {
+    padding-bottom: 2rem;
 }
 
 
-/* Navbar */
+/* Fixed Background Image */
+figure {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0 !important;
+}
+
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#fixed {
+    background-image: url('images/bg-1916x832.jpg');
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+}
+
+.intro {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    padding: 30px 50px;
+    background-color: #41414185;
+    border-radius: 15px;
+}
+
+.letter-space {
+    letter-spacing: 2px;
+}
+
+/* Navbar Section*/
 .navbar {
     padding: .8rem;
 }
 
 .navbar-nav li {
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 .nav-link {
     font-size: 1.1em !important;
 }
 
-
-
-/* image carosel */
-.carousel-inner img {
+.sticky {
+    position: fixed;
+    top: 0;
     width: 100%;
-    height: 100%;
+    z-index: 99;
 }
 
-.carousel-caption {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%)
-}
 
-.carousel-caption h1 {
-    font-size: 500%;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 10px #000;
-}
-
-.carousel-caption h3 {
-    font-size: 200%;
-    font-weight: 500;
-    text-shadow: 1px 1px 10px #000;
-    padding-bottom: 1rem;
-}
-
+/* About Section*/
 .jumbotron {
-    padding: 1rem;
+    padding: 20px 10%;
     border-radius: 0;
+    line-height: 30px;
 }
 
-.padding {
-    padding-bottom: 2rem;
-}
-
-.welcome {
+.title {
     width: 75%;
     margin: 0 auto;
     padding-top: 2rem;
 }
 
-.welcome hr {
+.title hr {
     border-top: 2px solid #b4b4b4;
     width: 95%;
     margin-top: .3rem;
@@ -92,42 +114,9 @@ ul.sub-list li {
     height: 388px;
 }
 
-
-/*HTML symbol*/
-.fa-code {
-    color: #e54d26; 
+.padd-bottom {
+    padding-bottom: 20px;
 }
-
-/*Bootstrap symbol*/
-.fa-bold {
-    color: #563d7c;
-}
-
-/*CSS symbol*/
-.fa-css3 {
-    color: #2163af;
-}
-
-.fa-code, .fa-bold, .fa-css3 {
-    font-size: 4em;
-    margin: 1rem;
-}
-
-
-.fun {
-    width: 100%;
-    margin-bottom: 2rem;
-}
-
-.gif {
-    width: 100%;
-}
-
-.card-img-top:hover {
-    opacity: .7;
-}
-
-
 
 /* Social Meida Section */
 .social a {
@@ -165,11 +154,8 @@ ul.sub-list li {
 .fa-instagram:hover,
 .fa-linkedin-in:hover,
 .fa-google-puls-g:hover {
-    color: #d5d5d5;
+    color: #919191;
 }
-
-
-
 
 /* Footer section */
 footer {
@@ -178,30 +164,28 @@ footer {
     padding: 2rem;
 }
 
-hr.light {
-    border-top: 1px solid #d5d5d5;
-    width: 75%;
-    margin-top: .8rem;
-    margin-bottom: 1rem;
+/* Media Queries screen at 1024px or larger*/
+@media (max-width: 1024px) {
+    .card a img {
+        height: 280px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .card-text {
+        font-size: .75rem;
+    }
 }
-
-footer a {
-    color: #d5d5d5;
-}
-
-hr.light-100 {
-    border-top: 1px solid #d5d5d5;
-    width: 100%;
-    margin-top: .8rem;
-    margin-bottom: 1rem;
-}
-
-
-
-
 
 /* Media Queries screen at 992px or larger*/
 @media (max-width: 992px) {
+    .navbar-brand h1 {
+        font-size: 2rem;
+    }
+
     .social a {
         font-size: 4em;
         padding: 2rem;
@@ -211,23 +195,26 @@ hr.light-100 {
 
 /* Media Queries screen at 768px or larger*/
 @media (max-width: 768px) {
-    .carousel-caption {
-        top: 45%;
-    }
-    
-    .carousel-caption h1 {
-        font-size: 350%;
-    }
-    
-    .carousel-caption h3 {
-        font-size: 140%;
-        font-weight: 400;
-        padding-bottom: .2rem;
+    figure {
+        height: 40%;
     }
 
-    .carousel-caption .btn {
-        font-size: 95%;
-        padding: 8px 14px;
+    .intro {
+        top: 20%;
+        left: 50%;
+        width: 306px;
+        margin-left: -153px;
+        padding: 20px 35px;
+        background-color: #41414154;
+        border-radius: 15px;
+    }
+
+    .navbar-brand h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 1rem !important;
     }
 
     .display-4 {
@@ -238,29 +225,22 @@ hr.light-100 {
         font-size: 2.5em;
         padding: 1.2rem;
     }
+
+    .jumbotron {
+        padding: 20px 5px;
+        line-height: 25px;
+    }
 }
 
 
 /* Media Queries screen at 576px or larger*/
 @media (max-width: 576px) {
-    .carousel-caption {
-        top: 40%;
-    }
-    
-    .carousel-caption h1 {
-        font-size: 250%;
-    }
-    
-    .carousel-caption h3 {
-        font-size: 110%;
+    .navbar-brand h1 {
+        font-size: 1rem;
     }
 
-    .carousel-caption .btn {
-        font-size: 90%;
-        padding: 4px 8px;
-    }
-    .carousel-indicators {
-        display: none;
+    .nav-link {
+        font-size: .75rem !important;
     }
 
     .display-4 {
@@ -273,68 +253,6 @@ hr.light-100 {
     }
     
 }
-
-
-
-
-/* Firefox Bug Fix */
-/* .carousel-item {
-    transition: -webkit-transform 0.5s ease;
-    transition: transform 0.5s ease;
-    transition: transform 0.5s ease;
-    -webkit-backface-visibility: visible;
-    backface-visibility: visible;
-} */
-
-
-
-
-/* Fixed Background Image */
-figure {
-    position: relative;
-    width: 100%;
-    height: 60%;
-    margin: 0 !important;
-}
-
-.fixed-wrap {
-    clip: rect(0, auto, auto, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-#fixed {
-    background-image: url('images/bg-2800x1600.jpg');
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: contain;
-    /* properties for bg-size cover - Resize the background image to cover the entire container 
-                            auto - background image is displayed in its original size
-                            px - absolute size of bg (width-px height-px;  or  all-around-px;)
-                            % - sixe change compared to whole screen by % (width-% height-p%;  or  all-around-%;)*/
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    will-change: transform;
-}
-
-
-
-
-/* Bootstrap Padding Fix */
-[class*="col-"] {
-    padding: 1rem;
-}
-
-
-
-
 
 /* 
 Extra small (xs) devices (portrate phones, less than 576px)
