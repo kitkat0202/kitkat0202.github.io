@@ -1,0 +1,77 @@
+:root {
+    --shadow:5px 5px 10px #000;
+    --trans: all 300ms ease-in-out;
+}
+
+/* SLIDER */
+.caption h2{
+    text-shadow: var(--shadow);
+}
+
+.caption a {
+    font-size: 22px;
+    padding: 0 40px;
+}
+
+.caption a:hover {
+    background-color: #9e9e9e;
+}
+
+
+
+/* ABOUT ME */
+.card-panel hr {
+    width: 50%;
+}
+
+.about-link {
+    line-height: 30px;
+    color: #0077B5;
+}
+
+.about-link:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.about-link:active,
+.about-link:visited {
+    color: #6b2f2f;
+}
+
+.paragraph {
+    font-size: 16px;
+}
+
+ul.info-list li{
+    list-style: square;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+ul.sub-list li {
+    list-style: none;
+    text-indent: 2em;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+
+/* SOCIAL MEDIA */
+.section-follow .fab {
+    color: #fff;
+    margin: 5px 20px;
+}
+
+.section-follow .fab:hover {
+    text-shadow: var(--shadow);
+    color: #919191;
+}
+
+/* PROJECTS */
+.dropdown-trigger .card:hover {
+    box-shadow: var(--shadow);
+}
+.card-title {
+    font-weight: bold;
+}

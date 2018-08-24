@@ -15,213 +15,236 @@
   <!-- Font Awsome JS Library -->
   <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 
-<body>
-  <!-- Fixed Background -->
-    <figure>
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <!-- Fixed Background -->
+    <figure id="home">
         <div class="fixed-wrap">
             <div id="fixed">
             </div>
             <div class="intro">
-                <h1 class="display-4 text-light letter-space">Katheirne He</h1>
+                <h1 class="display-4 text-light letter-space">Katherine He</h1>
                 <h6 class="text-light letter-space">Full-stack Developer</h6>
+                <a href="materialize/materialize.html"><button type="button" class="btn btn-light">Change Style</button></a>
             </div>
         </div>
     </figure>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><h1>Bootstrap Portfolio</h1></a>
-      
-      <!-- create a dropdown button for menue when screen gets too small -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <!-- the menu -->
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <!-- ml-auto: pushes the menu to list to the right side when is is not collapse -->
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="#" class="nav-link">Home</a> </li>
-          <li class="nav-item"><a href="#about" class="nav-link">About</a> </li>
-          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a> </li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a> </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><h1>Bootstrap Portfolio</h1></a>
+            
+            <!-- create a dropdown button for menue when screen gets too small -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-  <!-- Apout sections -->
-  <div id="about" class="container-fluid">
-    <div class="row jumbotron">
-      <!-- <col> tags of all divs on the same row need to add up to 12 ## if they dont then the dive will jump below -->
-      <div class="col-xs-12 col-sm-12 col-md-6">
-        <h2>About Me</h2>
-        <p>I am driven by the desire to succeed and am eager to apply my strong leadership experiences, and interpersonal skills to achieve this success. I always look forward to new experiences and further developing my professional and soft skills.</p>
-        <p>As treasurer of Asian American Student Union I acquired strong leadership and interpersonal skills. I am able to think quickly in emergency situations and in those requiring quick assessment of many factors in order to make appropriate decisions. Dealing with the diverse concerns of students and faculty, I have become adept at operating with the proper mix of authority, diplomacy, and tact. I am responsible, dedicated and open to learning new skills. The leadership position, in AASU, is one of the many opportunities that I have taken up to expand my professional skills. I have also worked with and lead many other organizations and clubs.</p>
-        <br>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-6">
-        <h4>Work Experiance</h4>
-        <hr>
-        <ul class="info-list">
-            <li>FlightSafety International
-              <ul class="sub-list">
-                <li>Position: Condition Contract Specialist</li>
-                <li>2012 - present</li>
-              </ul>
-            </li>
-            <li>University at Buffalo School of Management
-                <ul class="sub-list">
-                <li>Position: Administrative Assistant</li>
-                <li>2009 - 2012</li>
-              </ul>
-            </li>
-            <li>Island Photography
-                <ul class="sub-list">
-                <li>Position: Production Staff</li>
-                <li>summer of 2009 and summer of 2010</li>
-              </ul>
-            </li>
-        </ul>
-        <br>
-        <h4>Leadership Experiance</h4>
-        <hr>
-        <ul class="info-list">
-            <li>Asian American Student Union, Treasurer, 2010
-              <ul class="sub-list">
-                <li>Treasurer &amp; Senior Advisor</li>
-                <li>2010 &amp; 2012</li>
-              </ul>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+            <!-- the menu -->
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <!-- ml-auto: pushes the menu to list to the right side when is is not collapse -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a> </li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a> </li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a> </li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <!-- PROJECT big Title -->
-  <div class="container-fluid padding" id="projects">
-      <div class="row title text-center">
-          <div class="col-12">
-              <h1 class="display-4">Projects</h1>
-          </div>
-          <hr>
-      </div>
-  </div>
 
-  <!-- Cards -->
-  <div class="container-fluid padding">
-    <div class="row padding">
-    <!-- card 1 -->
-    <div class="col-md-4 col-lg-3 padd-bottom">
-        <div class="card">
-            <a href="https://kitkat0202.github.io/responsive-portfolio/" target="_blank"><img src="images/BP-index.png" alt="square pic" class="card-img-top"></a>
-            <div class="card-body">
-                <h4 class="card-title">Responsive Portfolio</h4>
-                <p class="card-text">This is a very basic three page portfolio that is mobile responsive. A similar BOOTSTRAP can be found at <a href="https://kitkat0202.github.io/bootstrap-portfolio/" target="_blank">Bootstrap_version</a>.</p>
+    <!-- About sections -->
+    <div id="about" class="container-fluid">
+        <div class="row jumbotron padding">
+            <div class="col-12">
+                <h1 class="display-4 text-center">About Me</h1>
+            </div>
+            <hr>
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <p>I am driven by the desire to succeed and am eager to apply my strong leadership experiences, and 
+                interpersonal skills to achieve this success. I always look forward to new experiences and further 
+                developing my professional and soft skills.</p>
+                <br>
+
+                <h5><strong>Resume:</strong> <a href="He_Katherine_Resume.pdf" target="_blank" class="about-link"> He_Katherine_Resume.pdf</a></h5>
+                <br>
+
+                <h5><strong>Email:</strong> <a href="mailto:he.katherine321@gmail.com?Subject=Hello" target="_top" class="about-link">he.katherine321@gmail.com</a></h5>
+                <br>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <div class="marg-left">
+                    <h4>Work Experiance</h4>
+                    <ul class="info-list">
+                        <li>FlightSafety International
+                        <ul class="sub-list">
+                            <li>Position: Condition Contract Specialist</li>
+                            <li>2012 - present</li>
+                        </ul>
+                        </li>
+                        <li>University at Buffalo School of Management
+                        <ul class="sub-list">
+                            <li>Position: Administrative Assistant</li>
+                            <li>2009 - 2012</li>
+                        </ul>
+                        </li>
+                        <li>Island Photography
+                        <ul class="sub-list">
+                            <li>Position: Production Staff</li>
+                            <li>summer of 2009 and summer of 2010</li>
+                        </ul>
+                        </li>
+                    </ul>
+                    <br>
+                    <h4>Leadership Experiance</h4>
+                    <ul class="info-list">
+                        <li>Asian American Student Union, Treasurer, 2010
+                        <ul class="sub-list">
+                            <li>Treasurer &amp; Senior Advisor</li>
+                            <li>2010 &amp; 2012</li>
+                        </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- card 2 -->
-    <div class="col-md-4 col-lg-3 padd-bottom">
-        <div class="card">
-            <a href="https://kitkat0202.github.io/Word-Guess-Game/" target="_blank"><img src="images/welcome-page.png" alt="square pic" class="card-img-top"></a>
-            <div class="card-body">
-                <h4 class="card-title">Anime Word Guess</h4>
-                <p class="card-text">If you like anime and guessing games please try out this game. It is fun, light hearted and can give you acouble of laughs. There is also a soft relaxing melody when you start the game.</p>
+
+    <!-- Connect -->
+    <div id="contact" class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-12">
+                <h1>Contact</h1>
+                <p>Follow me on Social Media</p>
+            </div>
+            <div class="col-12 social padding">
+                <a href="https://www.facebook.com/katherine.he" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://github.com/kitkat0202" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://plus.google.com/u/0/+KatherineHe" target="_blank">
+                    <i class="fab fa-google-plus-g"></i>
+                </a>
+                <a href="https://www.instagram.com/kitkat020290/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/katherinehe2/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
             </div>
         </div>
     </div>
 
-    <!-- card 3 -->
-    <div class="col-md-4 col-lg-3 padd-bottom">
-        <div class="card">
-            <a href="https://kitkat0202.github.io/unit-4-game/" target="_blank"><img src="images/unit-4-game.png" alt="square pic" class="card-img-top"></a>
-            <div class="card-body">
-                <h4 class="card-title">Pokemon Gamegirl Color</h4>
-                <p class="card-text">Play this very original Gamegirl COLOR game. The point of the game is to choose the correct starter pokemon to defete the rest. Your attack will grow whenever you attack, but the computer's wont.</p>
+
+    <!-- PROJECT big Title -->
+    <div class="container-fluid padding" id="projects">
+        <div class="row title text-center">
+            <div class="col-12">
+                <h1 class="display-4">Projects</h1>
             </div>
+            <hr>
         </div>
     </div>
 
-    <!-- card 4 -->
-    <div class="col-md-4 col-lg-3 padd-bottom">
-        <div class="card">
-            <a href="https://kitkat0202.github.io/crystal-game/" target="_blank"><img src="images/KH-Crystal-Game.png" alt="square pic" class="card-img-top"></a>
-            <div class="card-body">
-                <h4 class="card-title">Kingdom Hearts Crystal Numbers</h4>
-                <p class="card-text">Need a mindless, fun, simple game to play? Look no further this game is simple fun and never ending. Add up your points to equal the computer's and you win, go over and you lose.</p>
+    <!-- Cards -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <!-- card 1 -->
+            <div class="col-md-6 col-lg-4 padd-bottom">
+                <a href="https://kitkat0202.github.io/responsive-portfolio/" target="_blank">
+                    <div class="card">
+                        <img src="images/BP-index.png" alt="square pic" class="card-img">
+                        <div class="card-img-overlay card-text"><h4 class="card-title text-white">Beginner Responsive Portfolio</h4></div>
+                    </div>
+                </a>
             </div>
+
+            <!-- card 2 -->
+            <div class="col-md-6 col-lg-4 padd-bottom">
+                <a href="https://kitkat0202.github.io/Word-Guess-Game/" target="_blank">
+                    <div class="card">
+                        <img src="images/welcome-page.png" alt="square pic" class="card-img">
+                        <div class="card-img-overlay card-text"><h4 class="card-title text-white">Anime Word Guess</h4></div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- card 3 -->
+            <div class="col-md-6 col-lg-4 padd-bottom">
+                <a href="https://kitkat0202.github.io/unit-4-game/" target="_blank">
+                    <div class="card">
+                        <img src="images/unit-4-game.png" alt="square pic" class="card-img">
+                        <div class="card-img-overlay card-text"><h4 class="card-title text-white">Pokemon Gamegirl Color</h4></div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- card 4 -->
+            <div class="col-md-6 col-lg-4 padd-bottom">
+                <a href="https://kitkat0202.github.io/crystal-game/" target="_blank">
+                    <div class="card">
+                        <img src="images/KH-Crystal-Game.png" alt="square pic" class="card-img">
+                        <div class="card-img-overlay card-text"><h4 class="card-title text-white">Kingdom Hearts Crystals</h4></div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- card 5 -->
+            <div class="col-md-6 col-lg-4 padd-bottom">
+                <a href="https://kitkat0202.github.io/TriviaGame/" target="_blank">
+                    <div class="card">
+                        <img src="images/Diablo-Trivia-Game.png" alt="square pic" class="card-img">
+                        <div class="card-img-overlay card-text"><h4 class="card-title text-white">Diablo Trivia Game</h4></div>
+                    </div>
+                </a>
+            </div>
+            
+
+            <!-- card 6 -->
+            <div class="col-md-6 col-lg-4 padd-bottom">
+                <a href="https://kitkat0202.github.io/GifTastic/" target="_blank">
+                    <div class="card">
+                        <img src="images/Giftastic.png" alt="square pic" class="card-img">
+                        <div class="card-img-overlay card-text"><h4 class="card-title text-white">GifTastic Search</h4></div>
+                    </div>
+                </a>
+            </div>
+            
+
+            <!-- card 7 -->
+            <div class="col-md-6 col-lg-4 padd-bottom">
+                <a href="https://kitkat0202.github.io/RPS-Multiplayer/" target="_blank">
+                    <div class="card">
+                        <img src="images/RPS-game.png" alt="square pic" class="card-img">
+                        <div class="card-img-overlay card-text"><h4 class="card-title text-white">Multiplayer Rock Paper Scissors</h4></div>
+                    </div>
+                </a>
+            </div>
+            
+
+            <!-- card 8 -->
+            <div class="col-md-6 col-lg-4 padd-bottom">
+                <a href="https://evansimonross.github.io/Fly-in-Soup/" target="_blank">
+                    <div class="card">
+                        <img src="images/Fly_in_soup.png" alt="square pic" class="card-img">
+                        <div class="card-img-overlay card-text"><h4 class="card-title text-white">Fly-in-Soup</h4></div>
+                    </div>
+                </a>
+            </div>
+            
+
         </div>
     </div>
 
-    <!-- card 5 -->
-    <div class="col-md-4 col-lg-3 padd-bottom">
-        <div class="card">
-            <a href="https://kitkat0202.github.io/TriviaGame/" target="_blank"><img src="images/Diablo-Trivia-Game.png" alt="square pic" class="card-img-top"></a>
-            <div class="card-body">
-                <h4 class="card-title">Diablo Trivia Game</h4>
-                <p class="card-text">Do you think you know the Diablo lore? Play this Trivia game and test your knowlegdge. You have to be quick though, there is only 20 seconds to answer each question.</p>
-            </div>
-        </div>
-    </div>
 
-    <!-- card 6 -->
-    <div class="col-md-4 col-lg-3 padd-bottom">
-        <div class="card">
-            <a href="https://kitkat0202.github.io/GifTastic/" target="_blank"><img src="images/Giftastic.png" alt="square pic" class="card-img-top"></a>
-            <div class="card-body">
-                <h4 class="card-title">GifTastic</h4>
-                <p class="card-text">Have you ever needed to find the perfic gif but did not know where to fid it? Have you ever wanted to save those gif searches in to buttons so you didnt needt o type out the search again? Well look no further because this site will do all taht for you... as long as you don't close the page.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- card 7 -->
-    <div class="col-md-4 col-lg-3 padd-bottom">
-        <div class="card">
-            <a href="https://kitkat0202.github.io/RPS-Multiplayer/" target="_blank"><img src="images/RPS-game.png" alt="square pic" class="card-img-top"></a>
-            <div class="card-body">
-                <h4 class="card-title">Multiplayer Rock Paper Scissors</h4>
-                <p class="card-text">A multiplayer rock paper scissors game that will pair you up with the next person who enter the game. There is also a chat option in the game to taunt your opponent</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- card 8 -->
-    <div class="col-md-4 col-lg-3 padd-bottom">
-        <div class="card">
-            <a href="https://evansimonross.github.io/Fly-in-Soup/" target="_blank"><img src="images/Fly_in_soup.png" alt="square pic" class="card-img-top"></a>
-            <div class="card-body">
-                <h4 class="card-title">Fly-in-Soup</h4>
-                <p class="card-text">Look for NYC resturants in your area and check their most recent health inspection grade. Log in and save your favorite resturants so you can access whenever you need it.</p>
-            </div>
-        </div>
-    </div>
-
-    </div>
-  </div>
-
-  <!-- Connect -->
-  <div id="contact" class="container-fluid padding">
-    <div class="row text-center padding">
-      <div class="col-12">
-        <h2>Connect With Me</h2>
-      </div>
-      <div class="col-12 social padding">
-          <a href="https://www.facebook.com/katherine.he" target="_blank"><i class="fab fa-facebook"></i></a>
-          <a href="https://github.com/kitkat0202" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://plus.google.com/u/0/+KatherineHe" target="_blank"><i class="fab fa-google-plus-g"></i></a>
-          <a href="https://www.instagram.com/kitkat020290/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/katherinehe2/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-    </div>
-  </div>
 
   <!-- Footer -->
   <footer id="footer">
@@ -233,18 +256,7 @@
           </div>
       </div>
   </footer>
-
-  <script>
-    window.onscroll = function() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
-        }
-    }
-
-    var navbar = document.querySelector(".navbar");
-    var sticky = navbar.offsetTop;
-  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
 </body>
 </html>
