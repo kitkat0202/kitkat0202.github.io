@@ -130,12 +130,26 @@ figure {
     margin-left: 20px;
 }
 
+ul.info-list {
+    margin-bottom: 50px;
+}
+
 ul.info-list li{
-    list-style: square;
+    list-style: none;
 }
 
 ul.sub-list li {
     list-style: none;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.about-content h3 {
+    padding-top: 40px;
+    padding-bottom: 10px;
 }
 
 
