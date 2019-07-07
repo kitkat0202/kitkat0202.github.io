@@ -1,0 +1,106 @@
+[
+    {
+        "name": "Anime Word Guess",
+        "link": "https://kitkat0202.github.io/Word-Guess-Game/",
+        "tech_skills": ["HTML", "CSS", "Javascript", "JQuery"],
+        "img_path": "images/welcome-page.png",
+        "type": "Guessing Game",
+        "description": ""
+    },
+    {
+        "name": "Pokemon Gamegirl Color",
+        "link": "https://kitkat0202.github.io/unit-4-game/",
+        "tech_skills": ["HTML", "CSS", "Javascript", "JQuery", "AJAX"],
+        "img_path": "images/unit-4-game.png",
+        "type": "CSS Fun",
+        "description": ""
+    },
+    {
+        "name": "Kingdom Hearts Crystals",
+        "link": "https://kitkat0202.github.io/crystal-game/",
+        "tech_skills": ["HTML", "CSS", "Javascript", "JQuery"],
+        "img_path": "images/KH-Crystal-Game.png",
+        "type": "Math Game",
+        "description": ""
+    },
+    {
+        "name": "Diablo Trivia Game",
+        "link": "https://kitkat0202.github.io/TriviaGame/",
+        "tech_skills": ["HTML", "CSS", "Javascript", "JQuery"],
+        "img_path": "images/Diablo-Trivia-Game.png",
+        "type": "Guessing Game",
+        "description": ""
+    },
+    {
+        "name": "Multiplayer Rock Paper Scissors",
+        "link": "https://kitkat0202.github.io/RPS-Multiplayer/",
+        "tech_skills": ["HTML", "CSS", "Javascript", "JQuery", "firebase"],
+        "img_path": "images/RPS-game.png",
+        "type": "Multiplayer Rock Paper Scissors",
+        "description": ""
+    },
+    {
+        "name": "Fly-in-Soup <span class='small-text'>(collaborative work)</span>",
+        "link": "https://evansimonross.github.io/Fly-in-Soup/",
+        "tech_skills": ["HTML", "CSS", "Javascript", "JQuery", "AJAX"],
+        "img_path": "images/Fly_in_soup.png",
+        "type": "Resturant Sanitary Rating",
+        "description": ""
+    },
+    {
+        "name": "LIRI Bot <span class='small-text'>(terminal needed)</span>",
+        "link": "https://github.com/kitkat0202/liri-node-app",
+        "tech_skills": ["Javascript", "AJAX", "node"],
+        "img_path": "",
+        "type": "Search App",
+        "description": ""
+    },
+    {
+        "name": "Friend Finder",
+        "link": "https://stark-sea-40419.herokuapp.com/",
+        "tech_skills": ["HTML", "CSS", "Javascript", "node"],
+        "img_path": "",
+        "type": "Filter App",
+        "description": ""
+    },
+    {
+        "name": "Eat Da Burger Game",
+        "link": "https://shielded-stream-23766.herokuapp.com/",
+        "tech_skills": ["HTML", "CSS", "Javascript", "node", "SQL"],
+        "img_path": "",
+        "type": "CSS Fun",
+        "description": ""
+    },
+    {
+        "name": "Courier <span class='small-text'>(collaborative work)</span>",
+        "link": "https://courier-heroku-app.herokuapp.com/",
+        "tech_skills": ["HTML", "CSS", "Javascript", "node", "SQL"],
+        "img_path": "",
+        "type": "Mass Email",
+        "description": ""
+    },
+    {
+        "name": "New York Times Teck News Scraper",
+        "link": "https://aqueous-anchorage-13239.herokuapp.com/",
+        "tech_skills": ["HTML", "CSS", "Javascript", "AJAX", "node", "MongoDB"],
+        "img_path": "",
+        "type": "Tech News Scraper",
+        "description": ""
+    },
+    {
+        "name": "Kingdom Hearts Click",
+        "link": "https://kitkat0202.github.io/clicky/",
+        "tech_skills": ["HTML", "CSS", "Javascript", "node", "React"],
+        "img_path": "",
+        "type": "Memory Game",
+        "description": ""
+    },
+    {
+        "name": "Code Penguin <span class='small-text'>(collaborative work)</span>",
+        "link": "https://code-penguin.herokuapp.com/",
+        "tech_skills": ["HTML", "CSS", "Javascript", "node", "React", "Holochain"],
+        "img_path": "",
+        "type": "Code Question Community",
+        "description": ""
+    }
+]

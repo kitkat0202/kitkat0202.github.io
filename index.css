@@ -3,6 +3,7 @@
 :root {
     --trans: all 200ms ease-in-out;
     --hover-color: #66c1d8;
+    --active-color: #d8a566;
 }
 
 html, body {
@@ -21,12 +22,19 @@ a:hover {
     color: #fff;
 }
 
+.small-text {
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: -1px;
+    word-spacing: .5px;
+}
+
 
 /* Fixed Background Image */
 figure {
     position: relative;
     width: 100%;
-    height: 60%;
+    height: 50%;
     margin: 0 !important;
 }
 
@@ -124,38 +132,48 @@ figure {
     margin-left: 20px;
 }
 
-ul.info-list {
-    margin-bottom: 50px;
+.about-content {
+    max-width: 850px;
+    margin: 0 auto;
 }
 
-ul.info-list li{
-    list-style: none;
+.experience-content {
+    padding-top: 50px;
+    background-color: #fff;
+}
+
+.experience-content h3 {
+    text-decoration: underline;
+    padding-bottom: 10px;
 }
 
 ul.sub-list li {
     list-style: none;
 }
 
-.about-content {
-    max-width: 850px;
-    margin: 0 auto;
+.hover-section {
+    transition: var(--trans);
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 2px;
+
 }
 
-.about-content h3 {
-    padding-top: 40px;
-    padding-bottom: 10px;
+.hover-section:hover {
+    background-color: #dbe6ec;
 }
 
-.experience-content {
-    padding: 50px;
-    background-color: #fff;
+.reference {
+    font-size: 14px;
+    padding: 30px 10px 10px 10px;
 }
 
-.small-text {
-    font-weight: normal;
-    font-size: 12px;
-    letter-spacing: -1px;
-    word-spacing: .5px;
+.reference a:hover{
+    color: var(--hover-color);
+}
+
+.reference a:visited{
+    color: var(--active-color);
 }
 
 
@@ -316,7 +334,7 @@ footer {
 
 .footer-link:active,
 .footer-link:visited {
-    color: #6b2f2f;
+    color: var(--active-color);
 }
 
 
@@ -384,6 +402,14 @@ footer {
 
     .nav-link {
         font-size: .75rem !important;
+    }
+
+    .experience-content h3 {
+        font-size: 22px;
+    }
+
+    .experience-content .sub-list {
+        font-size: 12px;
     }
 
     .display-4 {
